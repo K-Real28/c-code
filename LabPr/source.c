@@ -11,9 +11,9 @@ int main() {
 	scanf_s("%d,%d",&x2,&y2);
 	printf("Введите третью координату");
 	scanf_s("%d,%d", &x3, &y3);
-	A = sqrt(pow(x2 - x1) + pow(y2 - y1));
-	B = sqrt(pow(x3 - x2) + pow(y3 - y2));
-	C = sqrt(pow(x1 - x3) + pow(y1 - y3));
+	A = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
+	B = sqrt(pow((x3 - x2), 2) + pow((y3 - y2), 2));
+	C = sqrt(pow((x1 - x3), 2) + pow((y1 - y3), 2));
 	P = A + B + C;
 	p = P / 2;
 	S = sqrt(p(p - A) * (p - B) * (p - C));
